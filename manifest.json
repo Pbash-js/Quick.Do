@@ -1,0 +1,15 @@
+{
+  "name": "Quick.Do",
+  "description": "An Any.do extension that returns all pending tasks",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/src/css/16.png",
+      "32": "/src/css/32.png",
+      "48": "/src/css/48.png",
+      "128": "/src/css/128.png"
+    }
+  }
+}

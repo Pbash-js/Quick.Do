@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  overflow: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+body {
+  border-radius: 10px;
+}
+
+.container {
+  height: 400px;
+  width: 500px;
+  background-color: #36b5f0;
+}
+
+nav {
+  position: absolute;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  height: 60px;
+  width: 500px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #36b5f0;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+  overflow: visible;
+}
+
+.loading {
+  height: 1rem;
+  width: 1rem;
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  display: none;
+}
+
+.loading-animated {
+  display: inline-block;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  30% {
+    transform: rotateZ(90deg);
+  }
+  60% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#nav-buttons {
+  float: right;
+  display: flex;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.sortby {
+  position: relative;
+  float: right;
+  top: 48px;
+  height: 120px;
+  width: 100px;
+  right: -20px;
+  background-color: #36b5f0;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.sortby > span {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.sortbydisplayed {
+  display: none;
+}
+
+.fas {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.5rem;
+  filter: invert(1);
+}
+
+.fas:hover {
+  filter: invert(0);
+}
+
+#sort {
+  background-image: url("./sort-amount-up-solid.svg");
+}
+#logout {
+  background-image: url("./sign-out-alt-solid.svg");
+}
+.sort-selector:hover {
+  color: #ccc;
+}
+
+#form {
+  margin: 0 auto;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 300px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+button {
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+h1 {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#tasks {
+  padding-left: 1rem;
+}
+#tasks > li {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  user-select: all;
+}
+
+.checked {
+  color: #ccc;
+}
+
+.unchecked {
+  color: #fff;
+}
